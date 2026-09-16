@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #0b1220;
+    color: #e2e8f0;
+  }
+}
+
+@layer utilities {
+  .bg-grid-texture {
+    background-image:
+      linear-gradient(to right, rgba(226, 232, 240, 0.07) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(226, 232, 240, 0.07) 1px, transparent 1px);
+    background-size: 44px 44px;
+  }
+
+  .bg-dot-texture {
+    background-image: radial-gradient(rgba(226, 232, 240, 0.16) 1px, transparent 1px);
+    background-size: 22px 22px;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
