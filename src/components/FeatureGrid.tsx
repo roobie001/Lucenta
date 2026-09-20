@@ -30,7 +30,7 @@ const features = [
 
 export function FeatureGrid() {
   return (
-    <section id="pricing" className="border-b border-white/10 py-24">
+    <section className="border-b border-white/10 py-24">
       <Container>
         <div className="mx-auto max-w-2xl text-center">
           <Eyebrow>Capabilities</Eyebrow>

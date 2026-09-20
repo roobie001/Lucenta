@@ -11,7 +11,7 @@ const resultRows = [
 
 export function AIWorkflow() {
   return (
-    <section id="workflow" className="border-b border-white/10 bg-white/[0.015] py-24">
+    <section className="border-b border-white/10 bg-white/[0.015] py-24">
       <Container>
         <div className="mx-auto max-w-2xl text-center">
           <Eyebrow>How It Works</Eyebrow>

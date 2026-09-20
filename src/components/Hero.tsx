@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Container } from "./ui/Container";
 import { Eyebrow } from "./ui/Eyebrow";
 
@@ -10,10 +11,7 @@ const badges = [
 
 export function Hero() {
   return (
-    <section
-      id="home"
-      className="relative overflow-hidden border-b border-white/10 bg-grid-texture"
-    >
+    <section className="relative overflow-hidden border-b border-white/10 bg-grid-texture">
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent via-navy/40 to-navy" />
       <div className="pointer-events-none absolute left-1/2 top-0 h-[520px] w-[820px] -translate-x-1/2 rounded-full bg-teal/10 blur-[120px]" />
 
@@ -36,18 +34,18 @@ export function Hero() {
           </p>
 
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <a
-              href="#get-started"
+            <Link
+              href="/contact"
               className="w-full rounded-md bg-teal px-6 py-3 text-sm font-semibold text-navy transition-all hover:bg-teal-light hover:shadow-glow-teal sm:w-auto"
             >
               Request a Demo
-            </a>
-            <a
-              href="#platform"
+            </Link>
+            <Link
+              href="/product"
               className="w-full rounded-md border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold text-ink transition-all hover:border-teal/40 hover:bg-white/10 sm:w-auto"
             >
               See the Platform
-            </a>
+            </Link>
           </div>
         </div>
 

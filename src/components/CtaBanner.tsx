@@ -1,8 +1,9 @@
+import Link from "next/link";
 import { Container } from "./ui/Container";
 
 export function CtaBanner() {
   return (
-    <section id="about" className="relative overflow-hidden border-b border-white/10 bg-dot-texture py-24">
+    <section className="relative overflow-hidden border-b border-white/10 bg-dot-texture py-24">
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-navy via-transparent to-navy" />
       <div className="pointer-events-none absolute left-1/2 top-1/2 h-[420px] w-[720px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-teal/10 blur-[120px]" />
 
@@ -16,12 +17,12 @@ export function CtaBanner() {
             department.
           </p>
           <div className="mt-8">
-            <a
-              href="#get-started"
+            <Link
+              href="/contact"
               className="inline-block rounded-md bg-teal px-7 py-3.5 text-sm font-semibold text-navy transition-all hover:bg-teal-light hover:shadow-glow-teal"
             >
               Request a Demo
-            </a>
+            </Link>
           </div>
         </div>
       </Container>
