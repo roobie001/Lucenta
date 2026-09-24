@@ -5,16 +5,16 @@ import { Pill } from "@/components/ui/Pill";
 import { PageHeader } from "@/components/ui/PageHeader";
 
 export const metadata: Metadata = {
-  title: "Technology — Lucenta",
+  title: "Technology — Lucentaa",
   description:
-    "How the Lucenta platform approaches AI-assisted imaging analysis, DICOM compatibility, data privacy, and infrastructure — in plain language.",
+    "How the Lucentaa platform approaches AI-assisted imaging analysis, DICOM compatibility, data privacy, and infrastructure — in plain language.",
 };
 
 const approachPoints = [
   {
     title: "In development, pilot stage",
     description:
-      "Lucenta's models are under active development and are being evaluated in structured pilots with partner sites. They are not yet cleared for standalone diagnostic use, and every output is reviewed by a qualified radiologist before it informs a clinical decision.",
+      "Lucentaa's models are under active development and are being evaluated in structured pilots with partner sites. They are not yet cleared for standalone diagnostic use, and every output is reviewed by a qualified radiologist before it informs a clinical decision.",
   },
   {
     title: "Assistive, not autonomous",
@@ -32,7 +32,7 @@ const dicomPoints = [
   {
     title: "Native DICOM support",
     description:
-      "Lucenta reads and processes standard DICOM series directly, without requiring imaging teams to change their acquisition or storage formats.",
+      "Lucentaa reads and processes standard DICOM series directly, without requiring imaging teams to change their acquisition or storage formats.",
   },
   {
     title: "PACS-compatible intake",
@@ -117,7 +117,7 @@ export default function TechnologyPage() {
       <PageHeader
         eyebrow="Technology"
         title="How the platform works, in plain language."
-        description="Lucenta is an early-stage, pilot software product. Here's an honest look at our AI approach, data compatibility, privacy practices, and infrastructure."
+        description="Lucentaa is an early-stage, pilot software product. Here's an honest look at our AI approach, data compatibility, privacy practices, and infrastructure."
       />
 
       <section className="border-b border-white/10 py-24">

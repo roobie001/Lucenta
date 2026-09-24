@@ -4,9 +4,9 @@ import { Eyebrow } from "@/components/ui/Eyebrow";
 import { PageHeader } from "@/components/ui/PageHeader";
 
 export const metadata: Metadata = {
-  title: "About — Lucenta",
+  title: "About — Lucentaa",
   description:
-    "Lucenta's mission, founding story, and team — an AI-assisted imaging review platform founded in Lagos, Nigeria.",
+    "Lucentaa's mission, founding story, and team — an AI-assisted imaging review platform founded in Lagos, Nigeria.",
 };
 
 const team = [
@@ -33,7 +33,7 @@ export default function AboutPage() {
       <PageHeader
         eyebrow="About"
         title="Built to give every radiologist a second set of eyes."
-        description="Lucenta started with a simple observation: imaging departments are stretched thin, and the tools available to them haven't kept pace."
+        description="Lucentaa started with a simple observation: imaging departments are stretched thin, and the tools available to them haven't kept pace."
       />
 
       <section className="border-b border-white/10 py-24">
@@ -63,7 +63,7 @@ export default function AboutPage() {
               Founded in Lagos, Nigeria.
             </h2>
             <p className="mt-6 text-base leading-relaxed text-ink/70">
-              Lucenta was founded in Lagos, Nigeria, by a small team who saw
+              Lucentaa was founded in Lagos, Nigeria, by a small team who saw
               firsthand how imaging backlogs and thin radiology staffing
               affect patient care across growing health systems. What started
               as a research project applying machine learning to X-ray triage
@@ -71,7 +71,7 @@ export default function AboutPage() {
               X-ray, CT, and MRI.
             </p>
             <p className="mt-4 text-base leading-relaxed text-ink/70">
-              We&apos;re still early. Lucenta is currently in active
+              We&apos;re still early. Lucentaa is currently in active
               development and running structured pilots with partner imaging
               departments — building the platform in the open, with
               radiologists in the room from day one.
@@ -85,7 +85,7 @@ export default function AboutPage() {
           <div className="mx-auto max-w-2xl text-center">
             <Eyebrow>Team</Eyebrow>
             <h2 className="text-balance text-3xl font-bold tracking-tight text-ink sm:text-4xl">
-              The people behind Lucenta.
+              The people behind Lucentaa.
             </h2>
             <p className="mt-4 text-balance text-ink/70">
               A small, focused team based in Lagos, building alongside

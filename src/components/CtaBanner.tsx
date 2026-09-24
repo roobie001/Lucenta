@@ -13,7 +13,7 @@ export function CtaBanner() {
             Give your radiologists an AI second opinion, on every study.
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-balance text-ink/70">
-            Talk to the Lucenta team about running a pilot in your imaging
+            Talk to the Lucentaa team about running a pilot in your imaging
             department.
           </p>
           <div className="mt-8">

@@ -5,9 +5,9 @@ import { Pill } from "@/components/ui/Pill";
 import { PageHeader } from "@/components/ui/PageHeader";
 
 export const metadata: Metadata = {
-  title: "Pricing — Lucenta",
+  title: "Pricing — Lucentaa",
   description:
-    "Lucenta pricing for pilot programs and enterprise deployments. Contact us to talk through your imaging department's needs.",
+    "Lucentaa pricing for pilot programs and enterprise deployments. Contact us to talk through your imaging department's needs.",
 };
 
 const tiers = [
@@ -16,7 +16,7 @@ const tiers = [
     tag: "For a single imaging department",
     price: "Contact Us",
     description:
-      "A structured, time-boxed pilot to validate Lucenta against your own studies before any wider rollout.",
+      "A structured, time-boxed pilot to validate Lucentaa against your own studies before any wider rollout.",
     features: [
       "Guided onboarding with our clinical team",
       "Support for one or more modalities (X-ray, CT, MRI)",
@@ -49,7 +49,7 @@ export default function PricingPage() {
       <PageHeader
         eyebrow="Pricing"
         title="Simple, conversation-first pricing."
-        description="Lucenta is in the pilot stage — pricing is scoped to your imaging department's size and needs, not a self-serve checkout. Reach out and we'll put together a plan together."
+        description="Lucentaa is in the pilot stage — pricing is scoped to your imaging department's size and needs, not a self-serve checkout. Reach out and we'll put together a plan together."
       />
 
       <section className="py-24">

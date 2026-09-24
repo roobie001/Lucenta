@@ -3,6 +3,7 @@ import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { getCurrentUser } from "@/lib/supabase/server";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -17,20 +18,22 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Lucenta — AI-Assisted Clinical Imaging Review",
+  title: "Lucentaa — AI-Assisted Clinical Imaging Review",
   description:
-    "Lucenta helps healthcare professionals review X-rays, CT scans, and MRIs faster with AI-assisted image analysis built for the clinical workflow.",
+    "Lucentaa helps healthcare professionals review X-rays, CT scans, and MRIs faster with AI-assisted image analysis built for the clinical workflow.",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const user = await getCurrentUser();
+
   return (
     <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable}`}>
       <body className="flex min-h-screen flex-col bg-navy font-sans text-ink antialiased">
-        <Navbar />
+        <Navbar userEmail={user?.email ?? null} />
         <main className="flex-1">{children}</main>
         <Footer />
       </body>

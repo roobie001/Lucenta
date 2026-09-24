@@ -6,9 +6,9 @@ import { Pill } from "@/components/ui/Pill";
 import { PageHeader } from "@/components/ui/PageHeader";
 
 export const metadata: Metadata = {
-  title: "Product — Lucenta",
+  title: "Product — Lucentaa",
   description:
-    "How Lucenta works: from study upload to AI analysis to clinical review, across X-ray, CT, MRI, and reporting workflows.",
+    "How Lucentaa works: from study upload to AI analysis to clinical review, across X-ray, CT, MRI, and reporting workflows.",
 };
 
 const workflowSteps = [
@@ -72,7 +72,7 @@ export default function ProductPage() {
       <PageHeader
         eyebrow="Product"
         title="From incoming scan to a reviewed finding."
-        description="Lucenta is built around the existing radiology workflow — imaging teams keep their tools, and AI-assisted analysis slots in between upload and sign-off."
+        description="Lucentaa is built around the existing radiology workflow — imaging teams keep their tools, and AI-assisted analysis slots in between upload and sign-off."
       />
 
       <section className="border-b border-white/10 py-24">
@@ -119,7 +119,7 @@ export default function ProductPage() {
               Built across modalities.
             </h2>
             <p className="mt-4 text-balance text-ink/70">
-              Lucenta&apos;s pilot models are being developed and validated
+              Lucentaa&apos;s pilot models are being developed and validated
               across the imaging types that make up the bulk of daily
               reading-room volume.
             </p>

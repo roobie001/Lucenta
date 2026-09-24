@@ -40,7 +40,7 @@ export function Footer() {
                 <span className="h-2.5 w-2.5 rounded-sm bg-teal shadow-[0_0_10px_rgba(13,148,136,0.9)]" />
               </span>
               <span className="text-lg font-bold tracking-tight text-ink">
-                Lucenta
+                Lucentaa
               </span>
             </Link>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-ink/60">
@@ -77,7 +77,7 @@ export function Footer() {
 
         <div className="mt-16 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 sm:flex-row">
           <p className="text-xs text-ink/40">
-            © 2026 Lucenta. All rights reserved.
+            © 2026 Lucentaa. All rights reserved.
           </p>
           <p className="font-mono text-xs text-ink/30">
             For investigational and pilot use. Not a substitute for clinical judgment.

@@ -26,7 +26,7 @@ export function Hero() {
           </h1>
 
           <p className="mx-auto mt-6 max-w-2xl text-balance text-base leading-relaxed text-ink/70 sm:text-lg">
-            Lucenta is an AI-assisted clinical decision-support platform that
+            Lucentaa is an AI-assisted clinical decision-support platform that
             helps healthcare professionals review X-rays, CT scans, and MRIs
             faster and with greater confidence — surfacing findings, flagging
             regions of interest, and prioritizing studies that need attention

@@ -5,9 +5,9 @@ import { PageHeader } from "@/components/ui/PageHeader";
 import { ContactForm } from "./ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact — Lucenta",
+  title: "Contact — Lucentaa",
   description:
-    "Get in touch with the Lucenta team about the pilot program, partnerships, or general questions.",
+    "Get in touch with the Lucentaa team about the pilot program, partnerships, or general questions.",
 };
 
 export default function ContactPage() {

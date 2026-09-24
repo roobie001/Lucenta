@@ -17,7 +17,7 @@ const features = [
   {
     title: "Pilot Program",
     description:
-      "A structured, low-risk onboarding path for health systems to validate Lucenta against their own studies before wider rollout.",
+      "A structured, low-risk onboarding path for health systems to validate Lucentaa against their own studies before wider rollout.",
     tag: "Adoption",
   },
   {
@@ -38,7 +38,7 @@ export function FeatureGrid() {
             Built for real clinical environments.
           </h2>
           <p className="mt-4 text-balance text-ink/70">
-            Lucenta is designed around the constraints that matter most in
+            Lucentaa is designed around the constraints that matter most in
             healthcare — compatibility, privacy, evidence, and a safe path to
             adoption.
           </p>

@@ -19,7 +19,7 @@ export function AIWorkflow() {
             From incoming scan to reviewable summary.
           </h2>
           <p className="mt-4 text-balance text-ink/70">
-            Lucenta&apos;s AI pipeline processes each study the moment it
+            Lucentaa&apos;s AI pipeline processes each study the moment it
             arrives, translating raw imaging data into structured, clinician-
             readable findings before a radiologist ever opens the file.
           </p>

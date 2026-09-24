@@ -3,8 +3,8 @@ import { Container } from "@/components/ui/Container";
 import { PageHeader } from "@/components/ui/PageHeader";
 
 export const metadata: Metadata = {
-  title: "Legal — Lucenta",
-  description: "Lucenta's Privacy Policy and Terms of Service.",
+  title: "Legal — Lucentaa",
+  description: "Lucentaa's Privacy Policy and Terms of Service.",
 };
 
 export default function LegalPage() {
@@ -13,7 +13,7 @@ export default function LegalPage() {
       <PageHeader
         eyebrow="Legal"
         title="Privacy Policy & Terms of Service"
-        description="Last updated September 2026. Lucenta is an early-stage, pilot software product — these terms will evolve as the platform matures."
+        description="Last updated September 2026. Lucentaa is an early-stage, pilot software product — these terms will evolve as the platform matures."
       />
 
       <section className="py-24">
@@ -36,10 +36,10 @@ export default function LegalPage() {
                 <div>
                   <h3 className="text-base font-bold text-ink">1. Overview</h3>
                   <p className="mt-2">
-                    This Privacy Policy describes how Lucenta (&quot;Lucenta,&quot;
+                    This Privacy Policy describes how Lucentaa (&quot;Lucentaa,&quot;
                     &quot;we,&quot; &quot;us&quot;) collects, uses, and protects
                     information in connection with our website and pilot
-                    software platform. Lucenta is currently offered as an
+                    software platform. Lucentaa is currently offered as an
                     early-stage pilot product to partner organizations under
                     separate pilot agreements, which may include additional
                     terms governing patient and imaging data.
@@ -64,7 +64,7 @@ export default function LegalPage() {
                   </h3>
                   <p className="mt-2">
                     Any patient imaging or health data processed by the
-                    Lucenta platform is handled under the terms of a separate
+                    Lucentaa platform is handled under the terms of a separate
                     pilot or service agreement with the relevant healthcare
                     organization, not under this website Privacy Policy. Such
                     data is de-identified at intake where applicable,
@@ -79,7 +79,7 @@ export default function LegalPage() {
                   <p className="mt-2">
                     We use the information you provide to respond to
                     inquiries, evaluate pilot program applications, and
-                    communicate with you about Lucenta. We do not sell
+                    communicate with you about Lucentaa. We do not sell
                     personal information to third parties.
                   </p>
                 </div>
@@ -109,7 +109,7 @@ export default function LegalPage() {
                     7. Changes to This Policy
                   </h3>
                   <p className="mt-2">
-                    As Lucenta moves from pilot to broader deployment, this
+                    As Lucentaa moves from pilot to broader deployment, this
                     policy will be updated to reflect new data practices. We
                     will post the updated date at the top of this page.
                   </p>
@@ -127,7 +127,7 @@ export default function LegalPage() {
                     1. Acceptance of Terms
                   </h3>
                   <p className="mt-2">
-                    By accessing this website or participating in the Lucenta
+                    By accessing this website or participating in the Lucentaa
                     pilot program, you agree to these Terms of Service. If you
                     do not agree, please do not use the site or platform.
                   </p>
@@ -137,7 +137,7 @@ export default function LegalPage() {
                     2. Pilot-Stage Product
                   </h3>
                   <p className="mt-2">
-                    Lucenta is an early-stage software platform currently
+                    Lucentaa is an early-stage software platform currently
                     offered through structured pilot programs. It is not a
                     finished, generally available diagnostic product. Features,
                     availability, and model performance are subject to change
@@ -149,7 +149,7 @@ export default function LegalPage() {
                     3. Not a Substitute for Clinical Judgment
                   </h3>
                   <p className="mt-2">
-                    Lucenta is designed to provide assistive, informational
+                    Lucentaa is designed to provide assistive, informational
                     output to qualified healthcare professionals. It is not
                     intended to provide a standalone diagnosis and does not
                     replace the independent clinical judgment of a licensed
@@ -163,7 +163,7 @@ export default function LegalPage() {
                     4. Pilot Agreements
                   </h3>
                   <p className="mt-2">
-                    Use of the Lucenta platform by a healthcare organization is
+                    Use of the Lucentaa platform by a healthcare organization is
                     governed by a separate, signed pilot or service agreement,
                     which takes precedence over these general Terms of Service
                     with respect to platform use, data handling, and clinical
@@ -187,7 +187,7 @@ export default function LegalPage() {
                   <p className="mt-2">
                     This website and its content are provided &quot;as is&quot;
                     without warranties of any kind. To the fullest extent
-                    permitted by law, Lucenta disclaims liability for any
+                    permitted by law, Lucentaa disclaims liability for any
                     damages arising from use of this website, separate from any
                     liability terms set out in a signed pilot agreement.
                   </p>

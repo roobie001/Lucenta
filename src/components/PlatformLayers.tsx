@@ -36,7 +36,7 @@ export function PlatformLayers() {
             A layered platform, built for the reading room.
           </h2>
           <p className="mt-4 text-balance text-ink/70">
-            Each layer of Lucenta handles one part of the imaging pipeline —
+            Each layer of Lucentaa handles one part of the imaging pipeline —
             from intake to sign-off — so radiologists stay in control at
             every step.
           </p>

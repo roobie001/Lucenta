@@ -6,9 +6,9 @@ import { PageHeader } from "@/components/ui/PageHeader";
 import { blogPosts } from "@/lib/blog";
 
 export const metadata: Metadata = {
-  title: "Blog — Lucenta",
+  title: "Blog — Lucentaa",
   description:
-    "Notes on AI-assisted imaging, our pilot program, and how we're building Lucenta alongside radiologists.",
+    "Notes on AI-assisted imaging, our pilot program, and how we're building Lucentaa alongside radiologists.",
 };
 
 export default function BlogIndexPage() {
@@ -17,7 +17,7 @@ export default function BlogIndexPage() {
       <PageHeader
         eyebrow="Blog"
         title="Notes from the team."
-        description="Thoughts on AI-assisted imaging, pilot updates, and how we're building Lucenta — written as things actually happen, not marketing copy."
+        description="Thoughts on AI-assisted imaging, pilot updates, and how we're building Lucentaa — written as things actually happen, not marketing copy."
       />
 
       <section className="py-24">
