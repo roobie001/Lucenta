@@ -49,7 +49,7 @@ export function Footer() {
               development.
             </p>
             <div className="mt-5 space-y-1.5 font-mono text-xs text-ink/40">
-              <p>hello@lucenta.health</p>
+              <p>hello@lucentaa.com</p>
               <p>Lagos, Nigeria</p>
             </div>
           </div>

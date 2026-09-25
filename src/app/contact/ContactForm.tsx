@@ -1,13 +1,52 @@
 "use client";
 
-import { useState, type FormEvent } from "react";
+import { useEffect, useState, type FormEvent } from "react";
+import ReCAPTCHA from "react-google-recaptcha";
+
+const RECAPTCHA_SITE_KEY = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY ?? "";
+const recaptchaConfigured =
+  RECAPTCHA_SITE_KEY !== "" && RECAPTCHA_SITE_KEY !== "your-recaptcha-site-key";
 
 export function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
+  const [captchaToken, setCaptchaToken] = useState<string | null>(null);
+  const [captchaError, setCaptchaError] = useState<string | null>(null);
+  const [compactCaptcha, setCompactCaptcha] = useState(false);
+
+  // The standard 304px widget overflows the form card on very narrow phones.
+  useEffect(() => {
+    const mq = window.matchMedia("(max-width: 399px)");
+    const update = () => setCompactCaptcha(mq.matches);
+    update();
+    mq.addEventListener("change", update);
+    return () => mq.removeEventListener("change", update);
+  }, []);
+
+  function handleCaptchaChange(token: string | null) {
+    setCaptchaToken(token);
+    if (token) setCaptchaError(null);
+  }
 
   function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
+
+    // NOTE: This is a static frontend with no backend, so reCAPTCHA here is
+    // client-side bot deterrence only. Real protection needs the token
+    // verified server-side (Google siteverify) from a backend endpoint,
+    // which is intentionally out of scope for now.
+    if (!captchaToken) {
+      setCaptchaError("Please complete the CAPTCHA to confirm you're not a robot.");
+      return;
+    }
+
+    // EmailJS send will be wired in here.
     setSubmitted(true);
+  }
+
+  function resetForm() {
+    setCaptchaToken(null);
+    setCaptchaError(null);
+    setSubmitted(false);
   }
 
   if (submitted) {
@@ -32,7 +71,7 @@ export function ContactForm() {
         </p>
         <button
           type="button"
-          onClick={() => setSubmitted(false)}
+          onClick={resetForm}
           className="mt-6 rounded-md border border-white/15 bg-white/5 px-5 py-2.5 text-sm font-semibold text-ink transition-all hover:border-teal/40 hover:bg-white/10"
         >
           Send another message
@@ -111,12 +150,55 @@ export function ContactForm() {
         />
       </div>
 
-      <button
-        type="submit"
-        className="w-full rounded-md bg-teal px-6 py-3 text-sm font-semibold text-navy transition-all hover:bg-teal-light hover:shadow-glow-teal sm:w-auto"
+      <div>
+        {recaptchaConfigured ? (
+          <ReCAPTCHA
+            key={compactCaptcha ? "compact" : "normal"}
+            sitekey={RECAPTCHA_SITE_KEY}
+            theme="dark"
+            size={compactCaptcha ? "compact" : "normal"}
+            onChange={handleCaptchaChange}
+            onExpired={() => handleCaptchaChange(null)}
+            onErrored={() =>
+              setCaptchaError(
+                "The CAPTCHA failed to load. Check your connection and refresh the page."
+              )
+            }
+          />
+        ) : (
+          <p className="rounded-md border border-amber/40 bg-amber/10 px-4 py-3 text-xs leading-relaxed text-amber-light">
+            CAPTCHA isn&apos;t configured yet. Add{" "}
+            <span className="font-mono">NEXT_PUBLIC_RECAPTCHA_SITE_KEY</span> to{" "}
+            <span className="font-mono">.env.local</span> and restart the dev
+            server.
+          </p>
+        )}
+        {captchaError && (
+          <p role="alert" className="mt-2 text-xs text-amber-light">
+            {captchaError}
+          </p>
+        )}
+      </div>
+
+      {/* A disabled button swallows clicks, so the wrapper catches them and shows the error. */}
+      <div
+        className="w-full sm:w-auto sm:inline-block"
+        onClick={() => {
+          if (!captchaToken) {
+            setCaptchaError(
+              "Please complete the CAPTCHA to confirm you're not a robot."
+            );
+          }
+        }}
       >
-        Send Message
-      </button>
+        <button
+          type="submit"
+          disabled={!captchaToken}
+          className="w-full rounded-md bg-teal px-6 py-3 text-sm font-semibold text-navy transition-all hover:bg-teal-light hover:shadow-glow-teal disabled:pointer-events-none disabled:opacity-50 sm:w-auto"
+        >
+          Send Message
+        </button>
+      </div>
     </form>
   );
 }

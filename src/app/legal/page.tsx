@@ -101,7 +101,7 @@ export default function LegalPage() {
                   <p className="mt-2">
                     You may request access to, correction of, or deletion of
                     personal information you&apos;ve submitted to us by
-                    contacting hello@lucenta.health.
+                    contacting hello@lucentaa.com.
                   </p>
                 </div>
                 <div>
@@ -198,7 +198,7 @@ export default function LegalPage() {
                   </h3>
                   <p className="mt-2">
                     Questions about these terms can be directed to
-                    hello@lucenta.health.
+                    hello@lucentaa.com.
                   </p>
                 </div>
               </div>

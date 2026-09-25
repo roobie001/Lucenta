@@ -25,10 +25,10 @@ export default function CareersPage() {
               radar for future openings.
             </p>
             <a
-              href="mailto:careers@lucenta.health"
+              href="mailto:careers@lucentaa.com"
               className="mt-6 inline-block font-mono text-sm text-teal-light transition-colors hover:text-teal-light/80"
             >
-              careers@lucenta.health
+              careers@lucentaa.com
             </a>
           </div>
         </Container>

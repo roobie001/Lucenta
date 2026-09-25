@@ -34,13 +34,13 @@ export default function ContactPage() {
                   <span className="font-mono text-xs uppercase tracking-widest text-ink/45">
                     Email
                   </span>
-                  <p className="mt-1 text-sm text-ink/80">hello@lucenta.health</p>
+                  <p className="mt-1 text-sm text-ink/80">hello@lucentaa.com</p>
                 </div>
                 <div>
                   <span className="font-mono text-xs uppercase tracking-widest text-ink/45">
                     Pilot Inquiries
                   </span>
-                  <p className="mt-1 text-sm text-ink/80">pilot@lucenta.health</p>
+                  <p className="mt-1 text-sm text-ink/80">pilot@lucentaa.com</p>
                 </div>
                 <div>
                   <span className="font-mono text-xs uppercase tracking-widest text-ink/45">
