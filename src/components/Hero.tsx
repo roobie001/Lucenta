@@ -3,10 +3,10 @@ import { Container } from "./ui/Container";
 import { Eyebrow } from "./ui/Eyebrow";
 
 const badges = [
-  "DICOM Native",
-  "HIPAA-Aware Architecture",
-  "SOC 2 Type II — In Progress",
-  "Built With Radiologists",
+  "Early Concept",
+  "Seeking Pilot Partners",
+  "DICOM Compatibility Planned",
+  "Based in Lagos, Nigeria",
 ];
 
 export function Hero() {
@@ -17,20 +17,20 @@ export function Hero() {
 
       <Container className="relative py-24 sm:py-32">
         <div className="mx-auto max-w-3xl text-center">
-          <Eyebrow>Platform</Eyebrow>
+          <Eyebrow>Early Concept</Eyebrow>
 
           <h1 className="text-balance text-4xl font-bold leading-tight tracking-tight text-ink sm:text-5xl lg:text-6xl">
-            Read every scan with
+            We&apos;re designing a first pass
             <br />
-            <span className="text-teal-light">an AI second opinion.</span>
+            <span className="text-teal-light">for every imaging study.</span>
           </h1>
 
           <p className="mx-auto mt-6 max-w-2xl text-balance text-base leading-relaxed text-ink/70 sm:text-lg">
-            Lucentaa is an AI-assisted clinical decision-support platform that
-            helps healthcare professionals review X-rays, CT scans, and MRIs
-            faster and with greater confidence — surfacing findings, flagging
-            regions of interest, and prioritizing studies that need attention
-            first.
+            Lucentaa is a concept for an AI tool that would flag candidate
+            findings on X-ray, CT, and MRI studies and move the urgent ones up
+            the worklist. A radiologist would review every flag before anything
+            reached a report. It is at an early stage, and we are seeking pilot
+            partners among healthcare providers.
           </p>
 
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
@@ -38,13 +38,13 @@ export function Hero() {
               href="/contact"
               className="w-full rounded-md bg-teal px-6 py-3 text-sm font-semibold text-navy transition-all hover:bg-teal-light hover:shadow-glow-teal sm:w-auto"
             >
-              Request a Demo
+              Become a Pilot Partner
             </Link>
             <Link
               href="/product"
               className="w-full rounded-md border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold text-ink transition-all hover:border-teal/40 hover:bg-white/10 sm:w-auto"
             >
-              See the Platform
+              See the Concept
             </Link>
           </div>
         </div>

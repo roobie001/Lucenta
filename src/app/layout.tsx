@@ -18,9 +18,22 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Lucentaa — AI-Assisted Clinical Imaging Review",
+  title: "Lucentaa | AI-Assisted Clinical Imaging Review",
   description:
-    "Lucentaa helps healthcare professionals review X-rays, CT scans, and MRIs faster with AI-assisted image analysis built for the clinical workflow.",
+    "An early concept for AI-assisted review of X-ray, CT, and MRI studies, built around a radiologist confirming every finding. Currently seeking pilot partners.",
+  manifest: "/site.webmanifest",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/android-chrome-192x192.png", sizes: "192x192", type: "image/png" },
+      { url: "/android-chrome-512x512.png", sizes: "512x512", type: "image/png" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+  },
 };
 
 export default async function RootLayout({

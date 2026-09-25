@@ -4,26 +4,26 @@ import { Eyebrow } from "@/components/ui/Eyebrow";
 import { PageHeader } from "@/components/ui/PageHeader";
 
 export const metadata: Metadata = {
-  title: "About — Lucentaa",
+  title: "About | Lucentaa",
   description:
-    "Lucentaa's mission, founding story, and team — an AI-assisted imaging review platform founded in Lagos, Nigeria.",
+    "Why Lucentaa exists, who is behind it, and where: a small team in Lagos, Nigeria developing an early concept for AI-assisted imaging review.",
 };
 
 const team = [
   {
-    name: "Founding Team Member",
+    name: "Name TBD",
     role: "Co-Founder & CEO",
-    bio: "Placeholder bio — leading product and clinical partnerships.",
+    bio: "Bio TBD. Leads product and clinical partnerships.",
   },
   {
-    name: "Founding Team Member",
+    name: "Name TBD",
     role: "Co-Founder & CTO",
-    bio: "Placeholder bio — leading AI research and engineering.",
+    bio: "Bio TBD. Leads AI research and engineering.",
   },
   {
-    name: "Founding Team Member",
-    role: "Clinical Advisor",
-    bio: "Placeholder bio — practicing radiologist advising on model validation.",
+    name: "Name TBD",
+    role: "Clinical Advisor (to be confirmed)",
+    bio: "Bio TBD. We intend to bring in a practicing radiologist for this role.",
   },
 ];
 
@@ -32,8 +32,8 @@ export default function AboutPage() {
     <>
       <PageHeader
         eyebrow="About"
-        title="Built to give every radiologist a second set of eyes."
-        description="Lucentaa started with a simple observation: imaging departments are stretched thin, and the tools available to them haven't kept pace."
+        title="Why we're building Lucentaa."
+        description="Reading rooms are handling more studies with the same number of people, and the software hasn't changed much to help. That is the problem we're working on."
       />
 
       <section className="border-b border-white/10 py-24">
@@ -41,15 +41,14 @@ export default function AboutPage() {
           <div className="mx-auto max-w-3xl">
             <Eyebrow>Mission</Eyebrow>
             <h2 className="text-balance text-3xl font-bold tracking-tight text-ink sm:text-4xl">
-              Help clinicians read every scan with more confidence.
+              Give radiologists a faster start on every study.
             </h2>
             <p className="mt-6 text-base leading-relaxed text-ink/70">
-              Our mission is to build AI-assisted tools that fit into the
-              existing radiology workflow — not replace the radiologist, but
-              give them a faster, more consistent second opinion on every
-              study that comes through the door. We believe that gets built
-              carefully, in partnership with the clinicians who will use it,
-              and validated openly before it touches real patient care.
+              We want to build tools that fit into the radiology workflow that
+              already exists. The goal is not to replace the radiologist. It is
+              to hand them a first pass on each study, so their time goes to the
+              hard reads. We plan to do that work with the clinicians who will
+              use it, and to test it openly before it goes near patient care.
             </p>
           </div>
         </Container>
@@ -63,18 +62,17 @@ export default function AboutPage() {
               Founded in Lagos, Nigeria.
             </h2>
             <p className="mt-6 text-base leading-relaxed text-ink/70">
-              Lucentaa was founded in Lagos, Nigeria, by a small team who saw
-              firsthand how imaging backlogs and thin radiology staffing
-              affect patient care across growing health systems. What started
-              as a research project applying machine learning to X-ray triage
-              grew into a broader platform for AI-assisted review across
-              X-ray, CT, and MRI.
+              We are based in Lagos, where imaging backlogs and a shortage of
+              radiologists are a daily reality for many hospitals. Lucentaa
+              comes out of one question: how can a small number of radiologists
+              work through a growing pile of X-ray, CT, and MRI studies without
+              cutting corners?
             </p>
             <p className="mt-4 text-base leading-relaxed text-ink/70">
-              We&apos;re still early. Lucentaa is currently in active
-              development and running structured pilots with partner imaging
-              departments — building the platform in the open, with
-              radiologists in the room from day one.
+              It&apos;s very early. Lucentaa is a concept, and no pilots are
+              running yet. We are seeking pilot partners among healthcare
+              providers, and we plan to work directly with radiologists during
+              pilot testing to validate the platform&apos;s outputs.
             </p>
           </div>
         </Container>
@@ -88,8 +86,9 @@ export default function AboutPage() {
               The people behind Lucentaa.
             </h2>
             <p className="mt-4 text-balance text-ink/70">
-              A small, focused team based in Lagos, building alongside
-              clinical advisors. Full bios coming soon.
+              A small team in Lagos. We plan to bring in clinical advisors as
+              the project develops. Names and bios will go here once they are
+              confirmed.
             </p>
           </div>
 

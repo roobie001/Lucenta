@@ -15,9 +15,9 @@ export function generateMetadata({
   params: { slug: string };
 }): Metadata {
   const post = getBlogPost(params.slug);
-  if (!post) return { title: "Post Not Found — Lucentaa" };
+  if (!post) return { title: "Post Not Found | Lucentaa" };
   return {
-    title: `${post.title} — Lucentaa Blog`,
+    title: `${post.title} | Lucentaa Blog`,
     description: post.excerpt,
   };
 }

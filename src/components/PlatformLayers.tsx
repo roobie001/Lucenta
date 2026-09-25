@@ -4,24 +4,24 @@ import { Pill } from "./ui/Pill";
 
 const layers = [
   {
-    label: "01 — Intake",
+    label: "01 / Intake (planned)",
     title: "Imaging Intake",
     description:
-      "Studies stream in directly from PACS or DICOM upload, auto-routed and normalized for analysis without disrupting existing radiology workflows.",
+      "The plan is for studies to arrive by DICOM upload or from a hospital's PACS, with identifying details stripped and images normalized. The radiology team's routine would stay as it is.",
     tags: ["PACS Integration", "DICOM Parsing", "Auto De-identification"],
   },
   {
-    label: "02 — Analysis",
+    label: "02 / Analysis (planned)",
     title: "AI Analysis Engine",
     description:
-      "Purpose-built models scan X-ray, CT, and MRI series for findings, measuring regions of interest and scoring confidence for every detection.",
+      "The AI models we are aiming to build would read each X-ray, CT, or MRI series, mark regions that may matter, and attach a confidence score to every detection.",
     tags: ["Multi-Modality Models", "Region Detection", "Confidence Scoring"],
   },
   {
-    label: "03 — Review",
+    label: "03 / Review (planned)",
     title: "Clinical Review Layer",
     description:
-      "Findings surface inside a radiologist-facing viewer with prioritized worklists, annotated overlays, and one-click sign-off.",
+      "In the intended design, flagged findings open in a viewer made for radiologists, with a prioritized worklist and overlays on the image. The radiologist confirms or dismisses each one, then signs off.",
     tags: ["Prioritized Worklist", "Annotated Overlays", "Audit Trail"],
   },
 ];
@@ -31,14 +31,14 @@ export function PlatformLayers() {
     <section className="border-b border-white/10 py-24">
       <Container>
         <div className="mx-auto max-w-2xl text-center">
-          <Eyebrow>Architecture</Eyebrow>
+          <Eyebrow>Planned Design</Eyebrow>
           <h2 className="text-balance text-3xl font-bold tracking-tight text-ink sm:text-4xl">
-            A layered platform, built for the reading room.
+            Three stages between the scanner and the report.
           </h2>
           <p className="mt-4 text-balance text-ink/70">
-            Each layer of Lucentaa handles one part of the imaging pipeline —
-            from intake to sign-off — so radiologists stay in control at
-            every step.
+            This is the design we are working toward. Each stage has one job:
+            studies come in, the models look at them, and a radiologist decides
+            what stands. None of it is built yet.
           </p>
         </div>
 

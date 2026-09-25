@@ -134,7 +134,7 @@ export function SignupForm() {
             aria-invalid={!!errors.email}
             aria-describedby={errors.email ? "email-error" : undefined}
             className={authInputClass}
-            placeholder="jane@hospital.org"
+            placeholder="you@hospital.org"
           />
           <FieldError id="email-error" message={errors.email} />
         </div>

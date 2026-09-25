@@ -5,85 +5,80 @@ import { Pill } from "@/components/ui/Pill";
 import { PageHeader } from "@/components/ui/PageHeader";
 
 export const metadata: Metadata = {
-  title: "Technology — Lucentaa",
+  title: "Technology | Lucentaa",
   description:
-    "How the Lucentaa platform approaches AI-assisted imaging analysis, DICOM compatibility, data privacy, and infrastructure — in plain language.",
+    "In plain language: what Lucentaa's AI is meant to do, which imaging formats it should read, and how we plan to handle patient data. Written for an early concept, not a finished product.",
 };
 
 const approachPoints = [
   {
-    title: "In development, pilot stage",
+    title: "Early concept stage",
     description:
-      "Lucentaa's models are under active development and are being evaluated in structured pilots with partner sites. They are not yet cleared for standalone diagnostic use, and every output is reviewed by a qualified radiologist before it informs a clinical decision.",
+      "No model has been clinically validated, and nothing has been tested with healthcare providers yet. Lucentaa is not cleared for diagnostic or clinical use.",
   },
   {
     title: "Assistive, not autonomous",
     description:
-      "The AI layer is designed to surface candidate findings and prioritize worklists — it does not make a diagnosis. Radiologists retain full authority to confirm, edit, or dismiss any AI-suggested finding.",
+      "The intent is for the AI to flag candidate findings and help order the worklist, not to diagnose anything. Radiologists would confirm, edit, or dismiss any suggested finding.",
   },
   {
-    title: "Trained and evaluated on annotated data",
+    title: "Planned validation",
     description:
-      "Models are trained and benchmarked against radiologist-annotated imaging datasets, with performance reviewed before any version is introduced into a pilot environment.",
+      "We plan to work directly with radiologists during pilot testing to validate the platform's outputs, and to test models on annotated imaging datasets before they go near a pilot.",
   },
 ];
 
 const dicomPoints = [
   {
-    title: "Native DICOM support",
+    title: "DICOM support (planned)",
     description:
-      "Lucentaa reads and processes standard DICOM series directly, without requiring imaging teams to change their acquisition or storage formats.",
+      "The plan is for Lucentaa to read standard DICOM series directly, so a team would not need to change how images are acquired or stored.",
   },
   {
-    title: "PACS-compatible intake",
+    title: "PACS-compatible intake (planned)",
     description:
-      "Studies can be routed from existing PACS infrastructure, so the analysis pipeline fits alongside current imaging systems rather than replacing them.",
+      "We intend to support sending studies from an existing PACS, so Lucentaa would sit next to current imaging systems instead of replacing them.",
   },
   {
-    title: "Multi-modality parsing",
+    title: "Multi-modality parsing (planned)",
     description:
-      "The intake layer normalizes studies across X-ray, CT, and MRI series so downstream analysis handles each modality consistently.",
+      "X-ray, CT, and MRI studies would be converted to a consistent format at intake, so the analysis step could treat every modality the same way.",
   },
 ];
 
 const privacyPoints = [
   {
-    title: "De-identification at intake",
+    title: "Data protection",
     description:
-      "Patient-identifying DICOM metadata is stripped or masked as studies enter the pipeline, ahead of any analysis step.",
+      "Data protection practices are being designed in line with applicable regulations, including Nigeria's NDPR, as the platform moves toward pilot testing.",
   },
   {
-    title: "Encryption in transit and at rest",
+    title: "Security standards",
     description:
-      "Imaging data and derived findings are encrypted both while moving through the pipeline and while stored.",
+      "Infrastructure and data handling will be built to meet healthcare-grade security standards. That is a plan, and none of it has been built yet.",
   },
   {
-    title: "Access boundaries",
+    title: "No real patient data today",
     description:
-      "Data access is scoped per pilot partner, with no cross-institution sharing of imaging data or findings.",
-  },
-  {
-    title: "Compliance-aware architecture",
-    description:
-      "The platform is being built with HIPAA-aware data handling practices in mind. Formal certifications, including SOC 2 Type II, are in progress and not yet complete.",
+      "This site uses made-up sample data only. Lucentaa does not currently collect or process any real patient data.",
   },
 ];
 
 const infraPoints = [
   {
-    title: "Cloud-hosted pipeline",
+    title: "Hosting still to be decided",
     description:
-      "The analysis pipeline runs on cloud infrastructure with isolated environments per pilot deployment.",
+      "We haven't settled on hosting or architecture yet. Infrastructure and data handling will be built to meet healthcare-grade security standards, and we'll describe the specifics once they exist.",
   },
   {
-    title: "Auditable processing",
+    title: "Traceability (planned)",
     description:
-      "Each study's path through intake, analysis, and review is logged to support traceability during pilots.",
+      "We intend to record each study's path through intake, analysis, and review, so any result could be traced back.",
   },
   {
-    title: "Built for iteration",
+    title: "Room to iterate",
     description:
-      "Infrastructure is designed to support frequent model evaluation and updates as the platform moves through pilot phases.",
+      "We expect to evaluate and update models often once pilots begin, and we'll plan the infrastructure with that in mind.",
   },
 ];
 
@@ -116,24 +111,23 @@ export default function TechnologyPage() {
     <>
       <PageHeader
         eyebrow="Technology"
-        title="How the platform works, in plain language."
-        description="Lucentaa is an early-stage, pilot software product. Here's an honest look at our AI approach, data compatibility, privacy practices, and infrastructure."
+        title="How we plan to build it, in plain language."
+        description="Lucentaa is an early concept. This page covers what we intend the AI to do, what it should work with, how we plan to handle patient data, and what we expect to run on."
       />
 
       <section className="border-b border-white/10 py-24">
         <Container>
           <div className="mx-auto max-w-2xl text-center">
             <div className="mb-4 flex justify-center">
-              <Pill tone="amber">In Development — Pilot Stage</Pill>
+              <Pill tone="amber">Early Concept Stage</Pill>
             </div>
             <Eyebrow>AI Approach</Eyebrow>
             <h2 className="text-balance text-3xl font-bold tracking-tight text-ink sm:text-4xl">
-              Assistive AI, reviewed by clinicians.
+              Assistive AI, with a radiologist deciding.
             </h2>
             <p className="mt-4 text-balance text-ink/70">
-              We describe our AI capabilities as they are today — in
-              development and pilot testing — not as a finished, validated
-              clinical product.
+              This is where things stand today: an early concept, with no
+              clinical testing done and no finished product.
             </p>
           </div>
           <PointList points={approachPoints} />
@@ -148,8 +142,8 @@ export default function TechnologyPage() {
               DICOM compatibility.
             </h2>
             <p className="mt-4 text-balance text-ink/70">
-              Built to work with the imaging formats and systems radiology
-              departments already use.
+              The aim is to work with the formats and systems radiology
+              departments already have.
             </p>
           </div>
           <PointList points={dicomPoints} />
@@ -161,11 +155,10 @@ export default function TechnologyPage() {
           <div className="mx-auto max-w-2xl text-center">
             <Eyebrow>Privacy & Security</Eyebrow>
             <h2 className="text-balance text-3xl font-bold tracking-tight text-ink sm:text-4xl">
-              Data privacy and security approach.
+              How we plan to handle patient data.
             </h2>
             <p className="mt-4 text-balance text-ink/70">
-              Patient data protection is treated as a foundational
-              requirement, not an add-on.
+              This is the part of the design that needs the most care.
             </p>
           </div>
           <PointList points={privacyPoints} />
@@ -177,11 +170,10 @@ export default function TechnologyPage() {
           <div className="mx-auto max-w-2xl text-center">
             <Eyebrow>Infrastructure</Eyebrow>
             <h2 className="text-balance text-3xl font-bold tracking-tight text-ink sm:text-4xl">
-              Infrastructure overview.
+              Infrastructure.
             </h2>
             <p className="mt-4 text-balance text-ink/70">
-              A high-level look at how the pipeline is hosted and operated
-              during pilot deployments.
+              What we expect to build, described at a high level.
             </p>
           </div>
           <PointList points={infraPoints} />

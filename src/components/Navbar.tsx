@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Container } from "./ui/Container";
+import { Wordmark } from "./ui/Wordmark";
 import { LogoutButton } from "./LogoutButton";
 
 const links = [
@@ -25,14 +26,9 @@ export function Navbar({ userEmail }: { userEmail: string | null }) {
         <Link
           href="/"
           onClick={() => setOpen(false)}
-          className="flex items-center gap-2"
+          className="flex items-center"
         >
-          <span className="flex h-7 w-7 items-center justify-center rounded-md bg-teal/15 ring-1 ring-teal/40">
-            <span className="h-2.5 w-2.5 rounded-sm bg-teal shadow-[0_0_10px_rgba(13,148,136,0.9)]" />
-          </span>
-          <span className="text-lg font-bold tracking-tight text-ink">
-            Lucentaa
-          </span>
+          <Wordmark className="h-10 w-auto" />
         </Link>
 
         <nav className="hidden items-center gap-8 lg:flex">

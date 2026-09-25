@@ -18,7 +18,7 @@ function friendlyError(message: string) {
     return "Incorrect email or password. If you don't have an account yet, sign up first.";
   }
   if (m.includes("email not confirmed")) {
-    return "Please confirm your email first — check your inbox for the confirmation link.";
+    return "Please confirm your email first. The confirmation link is in your inbox.";
   }
   if (m.includes("rate limit") || m.includes("too many")) {
     return "Too many attempts. Please wait a moment and try again.";
@@ -96,7 +96,7 @@ export function LoginForm() {
             aria-invalid={!!errors.email}
             aria-describedby={errors.email ? "email-error" : undefined}
             className={authInputClass}
-            placeholder="jane@hospital.org"
+            placeholder="you@hospital.org"
           />
           <FieldError id="email-error" message={errors.email} />
         </div>

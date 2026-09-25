@@ -10,18 +10,18 @@ export function CtaBanner() {
       <Container className="relative">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-balance text-3xl font-bold tracking-tight text-ink sm:text-4xl">
-            Give your radiologists an AI second opinion, on every study.
+            Interested in being a pilot partner?
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-balance text-ink/70">
-            Talk to the Lucentaa team about running a pilot in your imaging
-            department.
+            We are seeking pilot partners among healthcare providers. Tell us
+            about your imaging department and we&apos;ll take it from there.
           </p>
           <div className="mt-8">
             <Link
               href="/contact"
               className="inline-block rounded-md bg-teal px-7 py-3.5 text-sm font-semibold text-navy transition-all hover:bg-teal-light hover:shadow-glow-teal"
             >
-              Request a Demo
+              Become a Pilot Partner
             </Link>
           </div>
         </div>

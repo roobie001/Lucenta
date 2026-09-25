@@ -7,7 +7,7 @@ import { UploadDemoCard } from "@/components/dashboard/UploadDemoCard";
 import { getCurrentUser } from "@/lib/supabase/server";
 
 export const metadata: Metadata = {
-  title: "Dashboard — Lucentaa",
+  title: "Dashboard | Lucentaa",
   robots: { index: false },
 };
 
@@ -20,7 +20,7 @@ export default async function DashboardPage() {
       <PageHeader
         eyebrow="Dashboard"
         title="Welcome to Lucentaa."
-        description="You're signed in to the pilot demo dashboard."
+        description="You're signed in to the demo dashboard. Everything here uses sample data."
       />
 
       <section className="py-16">

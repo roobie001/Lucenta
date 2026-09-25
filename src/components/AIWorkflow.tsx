@@ -5,8 +5,8 @@ import { Pill } from "./ui/Pill";
 const resultRows = [
   { label: "Finding", value: "Pulmonary nodule, right upper lobe", tone: "amber" as const },
   { label: "Confidence", value: "94.2%", tone: "teal" as const },
-  { label: "Region", value: "RUL — Segment 3", tone: "neutral" as const },
-  { label: "Recommended Review", value: "Priority — Radiologist Sign-off", tone: "amber" as const },
+  { label: "Region", value: "RUL, segment 3", tone: "neutral" as const },
+  { label: "Recommended Review", value: "Priority, needs radiologist sign-off", tone: "amber" as const },
 ];
 
 export function AIWorkflow() {
@@ -14,14 +14,15 @@ export function AIWorkflow() {
     <section className="border-b border-white/10 bg-white/[0.015] py-24">
       <Container>
         <div className="mx-auto max-w-2xl text-center">
-          <Eyebrow>How It Works</Eyebrow>
+          <Eyebrow>How It Would Work</Eyebrow>
           <h2 className="text-balance text-3xl font-bold tracking-tight text-ink sm:text-4xl">
             From incoming scan to reviewable summary.
           </h2>
           <p className="mt-4 text-balance text-ink/70">
-            Lucentaa&apos;s AI pipeline processes each study the moment it
-            arrives, translating raw imaging data into structured, clinician-
-            readable findings before a radiologist ever opens the file.
+            The idea: when a study comes in, the pipeline runs on it
+            automatically, so candidate findings are already listed next to the
+            images when a radiologist opens the file. The example below is a
+            mockup with sample data, not real output.
           </p>
         </div>
 
@@ -30,7 +31,7 @@ export function AIWorkflow() {
             <div className="rounded-xl border border-white/10 bg-white/[0.03] p-5">
               <div className="flex items-center justify-between">
                 <span className="font-mono text-[11px] uppercase tracking-wider text-ink/50">
-                  Incoming Study
+                  Incoming Study (sample)
                 </span>
                 <Pill tone="amber">New</Pill>
               </div>
@@ -61,7 +62,7 @@ export function AIWorkflow() {
             <div className="rounded-xl border border-teal/30 bg-teal/[0.04] p-5 shadow-glow-teal">
               <div className="flex items-center justify-between">
                 <span className="font-mono text-[11px] uppercase tracking-wider text-ink/50">
-                  AI Summary
+                  AI Summary (sample)
                 </span>
                 <Pill tone="teal">Processed</Pill>
               </div>

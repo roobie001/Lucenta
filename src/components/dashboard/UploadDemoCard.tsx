@@ -6,7 +6,7 @@ import { Pill } from "@/components/ui/Pill";
 const sampleRows = [
   { label: "Finding", value: "Pulmonary nodule, right upper lobe", tone: "amber" as const },
   { label: "Confidence", value: "94.2%", tone: "teal" as const },
-  { label: "Region", value: "RUL — Segment 3", tone: "neutral" as const },
+  { label: "Region", value: "RUL, segment 3", tone: "neutral" as const },
   { label: "Status", value: "Pending radiologist review", tone: "amber" as const },
 ];
 
@@ -20,8 +20,8 @@ export function UploadDemoCard() {
       </span>
       <h2 className="mt-2 text-xl font-bold text-ink">Upload a scan</h2>
       <p className="mt-2 text-sm leading-relaxed text-ink/65">
-        Scan upload isn&apos;t enabled yet. Click below to preview what an
-        analysis result will look like — using sample data only.
+        Scan upload isn&apos;t enabled yet. Click below to see what an
+        analysis result will look like. It uses sample data only.
       </p>
 
       <button
@@ -44,7 +44,7 @@ export function UploadDemoCard() {
             <span className="font-mono text-[11px] uppercase tracking-wider text-ink/50">
               Sample Analysis Result
             </span>
-            <Pill tone="amber">Demo Data — Not Live AI</Pill>
+            <Pill tone="amber">Demo Data: Not Live AI</Pill>
           </div>
           <div className="mt-4 space-y-3">
             {sampleRows.map((row) => (

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Container } from "./ui/Container";
+import { Wordmark } from "./ui/Wordmark";
 
 const columns = [
   {
@@ -35,18 +36,12 @@ export function Footer() {
       <Container>
         <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
           <div>
-            <Link href="/" className="flex items-center gap-2">
-              <span className="flex h-7 w-7 items-center justify-center rounded-md bg-teal/15 ring-1 ring-teal/40">
-                <span className="h-2.5 w-2.5 rounded-sm bg-teal shadow-[0_0_10px_rgba(13,148,136,0.9)]" />
-              </span>
-              <span className="text-lg font-bold tracking-tight text-ink">
-                Lucentaa
-              </span>
+            <Link href="/" className="inline-flex items-center">
+              <Wordmark className="h-10 w-auto" />
             </Link>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-ink/60">
-              AI-assisted clinical decision support for X-ray, CT, and MRI
-              review — built alongside radiologists. Currently in pilot
-              development.
+              A concept for AI-assisted review of X-ray, CT, and MRI studies.
+              Currently seeking pilot partners.
             </p>
             <div className="mt-5 space-y-1.5 font-mono text-xs text-ink/40">
               <p>hello@lucentaa.com</p>
@@ -80,7 +75,7 @@ export function Footer() {
             © 2026 Lucentaa. All rights reserved.
           </p>
           <p className="font-mono text-xs text-ink/30">
-            For investigational and pilot use. Not a substitute for clinical judgment.
+            Concept-stage prototype. Not for clinical use, and not a substitute for clinical judgment.
           </p>
         </div>
       </Container>

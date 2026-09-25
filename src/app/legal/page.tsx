@@ -3,7 +3,7 @@ import { Container } from "@/components/ui/Container";
 import { PageHeader } from "@/components/ui/PageHeader";
 
 export const metadata: Metadata = {
-  title: "Legal — Lucentaa",
+  title: "Legal | Lucentaa",
   description: "Lucentaa's Privacy Policy and Terms of Service.",
 };
 
@@ -13,7 +13,7 @@ export default function LegalPage() {
       <PageHeader
         eyebrow="Legal"
         title="Privacy Policy & Terms of Service"
-        description="Last updated September 2026. Lucentaa is an early-stage, pilot software product — these terms will evolve as the platform matures."
+        description="Last updated September 2026. Lucentaa is an early concept, so these terms will change as the project develops."
       />
 
       <section className="py-24">
@@ -38,11 +38,11 @@ export default function LegalPage() {
                   <p className="mt-2">
                     This Privacy Policy describes how Lucentaa (&quot;Lucentaa,&quot;
                     &quot;we,&quot; &quot;us&quot;) collects, uses, and protects
-                    information in connection with our website and pilot
-                    software platform. Lucentaa is currently offered as an
-                    early-stage pilot product to partner organizations under
-                    separate pilot agreements, which may include additional
-                    terms governing patient and imaging data.
+                    information in connection with our website and the concept
+                    it describes. Lucentaa is at an early concept stage and is
+                    not currently offered to any healthcare organization. If
+                    pilot agreements are signed in future, they may include
+                    additional terms governing patient and imaging data.
                   </p>
                 </div>
                 <div>
@@ -53,7 +53,9 @@ export default function LegalPage() {
                     Through this website, we collect information you provide
                     directly, such as your name, email address, organization,
                     and any message content submitted through our contact
-                    form. We may also collect standard technical information,
+                    form. If you create an account, we also collect your email
+                    address and the credentials needed to log you in. We may
+                    also collect standard technical information,
                     such as browser type and pages visited, to help us
                     understand and improve the site.
                   </p>
@@ -63,13 +65,15 @@ export default function LegalPage() {
                     3. Imaging and Health Data
                   </h3>
                   <p className="mt-2">
-                    Any patient imaging or health data processed by the
-                    Lucentaa platform is handled under the terms of a separate
-                    pilot or service agreement with the relevant healthcare
-                    organization, not under this website Privacy Policy. Such
-                    data is de-identified at intake where applicable,
-                    encrypted in transit and at rest, and is not used for
-                    purposes outside the scope of the applicable agreement.
+                    Lucentaa does not currently collect or process real patient
+                    imaging or health data, and this site uses sample data
+                    only. If that changes, for example in a future pilot, we
+                    would handle such data under a separate written agreement
+                    with the relevant healthcare organization, and we would
+                    update this policy first. Data protection practices are
+                    being designed in line with applicable regulations,
+                    including Nigeria&apos;s NDPR, as the platform moves toward
+                    pilot testing.
                   </p>
                 </div>
                 <div>
@@ -78,8 +82,8 @@ export default function LegalPage() {
                   </h3>
                   <p className="mt-2">
                     We use the information you provide to respond to
-                    inquiries, evaluate pilot program applications, and
-                    communicate with you about Lucentaa. We do not sell
+                    inquiries, consider interest in becoming a pilot partner,
+                    and communicate with you about Lucentaa. We do not sell
                     personal information to third parties.
                   </p>
                 </div>
@@ -109,9 +113,9 @@ export default function LegalPage() {
                     7. Changes to This Policy
                   </h3>
                   <p className="mt-2">
-                    As Lucentaa moves from pilot to broader deployment, this
-                    policy will be updated to reflect new data practices. We
-                    will post the updated date at the top of this page.
+                    As Lucentaa moves toward pilot testing, this policy will be
+                    updated to reflect new data practices. We will post the
+                    updated date at the top of this page.
                   </p>
                 </div>
               </div>
@@ -127,21 +131,22 @@ export default function LegalPage() {
                     1. Acceptance of Terms
                   </h3>
                   <p className="mt-2">
-                    By accessing this website or participating in the Lucentaa
-                    pilot program, you agree to these Terms of Service. If you
-                    do not agree, please do not use the site or platform.
+                    By accessing this website or using the demo dashboard, you
+                    agree to these Terms of Service. If you do not agree,
+                    please do not use the site.
                   </p>
                 </div>
                 <div>
                   <h3 className="text-base font-bold text-ink">
-                    2. Pilot-Stage Product
+                    2. Early Concept
                   </h3>
                   <p className="mt-2">
-                    Lucentaa is an early-stage software platform currently
-                    offered through structured pilot programs. It is not a
-                    finished, generally available diagnostic product. Features,
-                    availability, and model performance are subject to change
-                    as the platform develops.
+                    Lucentaa is an early-stage concept. The dashboard and
+                    examples on this site use sample data to illustrate the
+                    idea, and no model on this site produces real analysis.
+                    Lucentaa is not a finished product and is not available for
+                    clinical use. Features and descriptions may change as the
+                    project develops.
                   </p>
                 </div>
                 <div>
@@ -149,7 +154,7 @@ export default function LegalPage() {
                     3. Not a Substitute for Clinical Judgment
                   </h3>
                   <p className="mt-2">
-                    Lucentaa is designed to provide assistive, informational
+                    Lucentaa is intended to provide assistive, informational
                     output to qualified healthcare professionals. It is not
                     intended to provide a standalone diagnosis and does not
                     replace the independent clinical judgment of a licensed
@@ -160,14 +165,14 @@ export default function LegalPage() {
                 </div>
                 <div>
                   <h3 className="text-base font-bold text-ink">
-                    4. Pilot Agreements
+                    4. Future Pilot Agreements
                   </h3>
                   <p className="mt-2">
-                    Use of the Lucentaa platform by a healthcare organization is
-                    governed by a separate, signed pilot or service agreement,
-                    which takes precedence over these general Terms of Service
-                    with respect to platform use, data handling, and clinical
-                    responsibilities.
+                    Any future use of Lucentaa by a healthcare organization
+                    would be governed by a separate, signed pilot or service
+                    agreement, which would take precedence over these general
+                    Terms of Service with respect to platform use, data
+                    handling, and clinical responsibilities.
                   </p>
                 </div>
                 <div>

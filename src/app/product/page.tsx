@@ -6,9 +6,9 @@ import { Pill } from "@/components/ui/Pill";
 import { PageHeader } from "@/components/ui/PageHeader";
 
 export const metadata: Metadata = {
-  title: "Product — Lucentaa",
+  title: "Product | Lucentaa",
   description:
-    "How Lucentaa works: from study upload to AI analysis to clinical review, across X-ray, CT, MRI, and reporting workflows.",
+    "How Lucentaa is intended to work: a study is uploaded, AI models flag candidate findings, and a radiologist reviews each one. An early concept covering X-ray, CT, MRI, and reporting.",
 };
 
 const workflowSteps = [
@@ -16,19 +16,19 @@ const workflowSteps = [
     step: "01",
     title: "Upload",
     description:
-      "Studies arrive via DICOM upload or direct PACS integration, automatically de-identified and normalized for the analysis pipeline.",
+      "The plan is for users to upload DICOM files or connect a PACS, with identifying details removed and the images normalized before analysis starts.",
   },
   {
     step: "02",
     title: "AI Analysis",
     description:
-      "Pilot models scan the study for candidate findings, flag regions of interest, and attach a confidence score to each detection.",
+      "The AI models would look for candidate findings, mark the region on the image, and give each one a confidence score.",
   },
   {
     step: "03",
     title: "Clinical Review",
     description:
-      "A radiologist reviews every AI-flagged finding inside a dedicated viewer, confirms or dismisses it, and signs off before it reaches a report.",
+      "A radiologist would go through each flagged finding in the viewer and confirm or dismiss it. Nothing would reach a report without that sign-off.",
   },
 ];
 
@@ -37,32 +37,32 @@ const useCases = [
     tag: "X-Ray",
     title: "Chest & Musculoskeletal X-Ray",
     description:
-      "Supports review of common chest and MSK X-ray studies, highlighting regions that may warrant closer attention during read.",
+      "Chest and bone X-rays. The model would mark regions a radiologist may want to look at a second time.",
   },
   {
     tag: "CT",
     title: "CT Triage Support",
     description:
-      "Helps prioritize incoming CT studies by surfacing potential findings early, so higher-urgency scans can be reviewed sooner.",
+      "Incoming CT studies would get a quick first pass, so a scan with a possible urgent finding could move up the worklist.",
   },
   {
     tag: "MRI",
     title: "MRI Series Review",
     description:
-      "Assists with navigating multi-series MRI studies by organizing findings alongside the relevant slices and sequences.",
+      "An MRI study can have dozens of series. The goal is to list flagged findings with the slices and sequences they appear on, so there is less scrolling to find them.",
   },
   {
     tag: "Reporting",
     title: "Structured Reporting Assist",
     description:
-      "Drafts structured summary fields from confirmed findings to reduce manual transcription — every field remains fully editable.",
+      "Once a radiologist confirmed a finding, Lucentaa could fill in the matching fields of a structured report. Every field would stay editable.",
   },
 ];
 
 const sampleFindings = [
   { label: "Finding", value: "Pulmonary nodule, right upper lobe", tone: "amber" as const },
   { label: "Confidence", value: "94.2%", tone: "teal" as const },
-  { label: "Region", value: "RUL — Segment 3", tone: "neutral" as const },
+  { label: "Region", value: "RUL, segment 3", tone: "neutral" as const },
   { label: "Status", value: "Pending radiologist review", tone: "amber" as const },
 ];
 
@@ -72,7 +72,7 @@ export default function ProductPage() {
       <PageHeader
         eyebrow="Product"
         title="From incoming scan to a reviewed finding."
-        description="Lucentaa is built around the existing radiology workflow — imaging teams keep their tools, and AI-assisted analysis slots in between upload and sign-off."
+        description="The concept: imaging teams keep the tools they already use, and Lucentaa adds one step between upload and sign-off, an automated first pass that a radiologist reviews."
       />
 
       <section className="border-b border-white/10 py-24">
@@ -83,8 +83,8 @@ export default function ProductPage() {
               Upload → AI Analysis → Clinical Review
             </h2>
             <p className="mt-4 text-balance text-ink/70">
-              Three stages, one pipeline. Every study passes through the same
-              path, and a radiologist always has final say.
+              In this design, every study takes the same path, and a
+              radiologist has the final say.
             </p>
           </div>
 
@@ -116,12 +116,12 @@ export default function ProductPage() {
           <div className="mx-auto max-w-2xl text-center">
             <Eyebrow>Use Cases</Eyebrow>
             <h2 className="text-balance text-3xl font-bold tracking-tight text-ink sm:text-4xl">
-              Built across modalities.
+              Where it applies.
             </h2>
             <p className="mt-4 text-balance text-ink/70">
-              Lucentaa&apos;s pilot models are being developed and validated
-              across the imaging types that make up the bulk of daily
-              reading-room volume.
+              We are looking first at the study types that fill most of a
+              reading room&apos;s day. None of these use cases has been
+              clinically tested yet.
             </p>
           </div>
 
@@ -149,17 +149,17 @@ export default function ProductPage() {
           <div className="mx-auto max-w-2xl text-center">
             <Eyebrow>Interface</Eyebrow>
             <h2 className="text-balance text-3xl font-bold tracking-tight text-ink sm:text-4xl">
-              A preview of the analysis view.
+              What the review screen looks like.
             </h2>
             <p className="mt-4 text-balance text-ink/70">
-              A styled mockup of the clinical review interface, shown with
-              sample data for illustration.
+              This is a mockup with made-up sample data. It does not show a real
+              patient or real model output.
             </p>
           </div>
 
           <div className="mx-auto mt-16 max-w-5xl">
             <div className="mb-4 flex items-center justify-center gap-2">
-              <Pill tone="amber">Sample Data — Not a Live Patient Record</Pill>
+              <Pill tone="amber">Sample Data: Not a Live Patient Record</Pill>
             </div>
             <div className="rounded-2xl border border-white/10 bg-navy-100/60 p-6 sm:p-10">
               <div className="grid grid-cols-1 items-center gap-6 lg:grid-cols-[1fr_auto_1fr]">
@@ -235,18 +235,17 @@ export default function ProductPage() {
         <Container>
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-balance text-3xl font-bold tracking-tight text-ink sm:text-4xl">
-              Want to see it on your own studies?
+              Want to help shape it?
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-balance text-ink/70">
-              We&apos;re onboarding a limited number of imaging departments
-              into the pilot program.
+              We are seeking pilot partners among healthcare providers.
             </p>
             <div className="mt-8">
               <Link
                 href="/contact"
                 className="inline-block rounded-md bg-teal px-7 py-3.5 text-sm font-semibold text-navy transition-all hover:bg-teal-light hover:shadow-glow-teal"
               >
-                Request a Demo
+                Become a Pilot Partner
               </Link>
             </div>
           </div>

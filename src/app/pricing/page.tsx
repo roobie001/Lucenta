@@ -5,9 +5,9 @@ import { Pill } from "@/components/ui/Pill";
 import { PageHeader } from "@/components/ui/PageHeader";
 
 export const metadata: Metadata = {
-  title: "Pricing — Lucentaa",
+  title: "Pricing | Lucentaa",
   description:
-    "Lucentaa pricing for pilot programs and enterprise deployments. Contact us to talk through your imaging department's needs.",
+    "Pilot and enterprise pricing is set case by case. Contact us with details about your imaging department.",
 };
 
 const tiers = [
@@ -16,13 +16,11 @@ const tiers = [
     tag: "For a single imaging department",
     price: "Contact Us",
     description:
-      "A structured, time-boxed pilot to validate Lucentaa against your own studies before any wider rollout.",
+      "A time-limited pilot on your own studies. Scope and terms would be agreed with each partner before anything starts.",
     features: [
-      "Guided onboarding with our clinical team",
-      "Support for one or more modalities (X-ray, CT, MRI)",
-      "DICOM/PACS integration assistance",
-      "Weekly performance review sessions",
-      "No long-term commitment",
+      "Pilot support included",
+      "Modalities and scope agreed with each partner",
+      "Terms agreed up front",
     ],
     highlighted: false,
   },
@@ -31,13 +29,11 @@ const tiers = [
     tag: "For health systems and networks",
     price: "Contact Us",
     description:
-      "For multi-site health systems ready to scale AI-assisted review across departments and modalities.",
+      "For health systems that may later want to use Lucentaa across several departments or sites. Nothing at this tier exists yet.",
     features: [
       "Everything in Pilot Program",
-      "Multi-site deployment support",
-      "Dedicated implementation team",
-      "Custom SLAs and reporting",
-      "Priority access to new model releases",
+      "Multi-site plans scoped case by case",
+      "Terms agreed directly with our team",
     ],
     highlighted: true,
   },
@@ -48,8 +44,8 @@ export default function PricingPage() {
     <>
       <PageHeader
         eyebrow="Pricing"
-        title="Simple, conversation-first pricing."
-        description="Lucentaa is in the pilot stage — pricing is scoped to your imaging department's size and needs, not a self-serve checkout. Reach out and we'll put together a plan together."
+        title="Pricing depends on your department."
+        description="Lucentaa is an early concept, so there is no self-serve checkout and no public price list. If you'd like to be a pilot partner, tell us about your imaging department and we'll work out terms together."
       />
 
       <section className="py-24">
@@ -66,7 +62,7 @@ export default function PricingPage() {
               >
                 {tier.highlighted && (
                   <div className="absolute -top-3 left-8">
-                    <Pill tone="amber">Most Common</Pill>
+                    <Pill tone="amber">Multi-Site</Pill>
                   </div>
                 )}
                 <span className="font-mono text-xs uppercase tracking-widest text-ink/45">
@@ -102,15 +98,15 @@ export default function PricingPage() {
                       : "border border-white/15 bg-white/5 text-ink hover:border-teal/40 hover:bg-white/10"
                   }`}
                 >
-                  Request a Demo
+                  Get in Touch
                 </Link>
               </div>
             ))}
           </div>
 
           <p className="mx-auto mt-10 max-w-2xl text-balance text-center text-sm text-ink/50">
-            No payment is collected on this site. All pricing is finalized
-            directly with our team based on your department&apos;s scope.
+            No payment is taken on this site. Pricing is agreed directly with
+            our team.
           </p>
         </Container>
       </section>

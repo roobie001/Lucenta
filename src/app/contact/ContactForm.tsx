@@ -66,8 +66,8 @@ export function ContactForm() {
         </div>
         <h3 className="mt-4 text-lg font-bold text-ink">Message sent</h3>
         <p className="mt-2 text-sm leading-relaxed text-ink/65">
-          Thanks for reaching out — someone from our team will follow up by
-          email shortly.
+          Thanks for getting in touch. Someone from our team will reply by
+          email.
         </p>
         <button
           type="button"
@@ -96,7 +96,7 @@ export function ContactForm() {
             type="text"
             required
             className="mt-2 w-full rounded-md border border-white/15 bg-white/[0.03] px-4 py-2.5 text-sm text-ink placeholder:text-ink/30 focus:border-teal/50 focus:outline-none focus:ring-1 focus:ring-teal/50"
-            placeholder="Jane Doe"
+            placeholder="Your full name"
           />
         </div>
         <div>
@@ -112,7 +112,7 @@ export function ContactForm() {
             type="email"
             required
             className="mt-2 w-full rounded-md border border-white/15 bg-white/[0.03] px-4 py-2.5 text-sm text-ink placeholder:text-ink/30 focus:border-teal/50 focus:outline-none focus:ring-1 focus:ring-teal/50"
-            placeholder="jane@hospital.org"
+            placeholder="you@hospital.org"
           />
         </div>
       </div>
@@ -129,7 +129,7 @@ export function ContactForm() {
           name="organization"
           type="text"
           className="mt-2 w-full rounded-md border border-white/15 bg-white/[0.03] px-4 py-2.5 text-sm text-ink placeholder:text-ink/30 focus:border-teal/50 focus:outline-none focus:ring-1 focus:ring-teal/50"
-          placeholder="Imaging department, hospital, or company"
+          placeholder="Hospital, clinic, or department"
         />
       </div>
 
@@ -146,7 +146,7 @@ export function ContactForm() {
           rows={5}
           required
           className="mt-2 w-full resize-none rounded-md border border-white/15 bg-white/[0.03] px-4 py-2.5 text-sm text-ink placeholder:text-ink/30 focus:border-teal/50 focus:outline-none focus:ring-1 focus:ring-teal/50"
-          placeholder="Tell us about your imaging department and what you're looking for."
+          placeholder="Which modalities do you read, roughly how many studies a week, and what would you like to test?"
         />
       </div>
 

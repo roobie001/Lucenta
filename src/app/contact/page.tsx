@@ -5,9 +5,9 @@ import { PageHeader } from "@/components/ui/PageHeader";
 import { ContactForm } from "./ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact — Lucentaa",
+  title: "Contact | Lucentaa",
   description:
-    "Get in touch with the Lucentaa team about the pilot program, partnerships, or general questions.",
+    "Contact the Lucentaa team about becoming a pilot partner, a collaboration, or any other question.",
 };
 
 export default function ContactPage() {
@@ -16,7 +16,7 @@ export default function ContactPage() {
       <PageHeader
         eyebrow="Contact"
         title="Let's talk about your imaging department."
-        description="Whether you're exploring the pilot program or just have questions, we'd like to hear from you."
+        description="Ask about becoming a pilot partner, a collaboration, or anything else. Someone on our team will read your message."
       />
 
       <section className="py-24">
