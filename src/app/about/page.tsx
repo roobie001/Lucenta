@@ -11,14 +11,12 @@ export const metadata: Metadata = {
 
 const team = [
   {
-    name: "Name TBD",
+    name: "Ogbodo Obiajulu Cajetan",
     role: "Co-Founder & CEO",
-    bio: "Bio TBD. Leads product and clinical partnerships.",
   },
   {
-    name: "Name TBD",
-    role: "Co-Founder & CTO",
-    bio: "Bio TBD. Leads AI research and engineering.",
+    name: "Ndubuisi Rejoice Chidalu",
+    role: "Co-Founder & CE0",
   },
   {
     name: "Name TBD",
