@@ -20,7 +20,7 @@ export default async function DashboardPage() {
       <PageHeader
         eyebrow="Dashboard"
         title="Welcome to Lucentaa."
-        description="You're signed in to the demo dashboard. Everything here uses sample data."
+        // description="You're signed in to the demo dashboard. Everything here uses sample data."
       />
 
       <section className="py-16">
