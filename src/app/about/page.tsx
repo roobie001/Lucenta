@@ -16,7 +16,7 @@ const team = [
   },
   {
     name: "Ndubuisi Rejoice Chidalu",
-    role: "Co-Founder & CE0",
+    role: "Co-Founder & CO0",
   },
   {
     name: "Name TBD",
@@ -89,7 +89,14 @@ export default function AboutPage() {
               confirmed.
             </p>
             <p className="mt-4 text-sm text-ink/65">
-              <a href="https://www.linkedin.com/company/lucentaa/" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-ink">Follow Lucentaa on LinkedIn</a>
+              <a
+                href="https://www.linkedin.com/company/lucentaa/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-colors hover:text-ink"
+              >
+                Follow Lucentaa on LinkedIn
+              </a>
             </p>
           </div>
 
@@ -115,7 +122,14 @@ export default function AboutPage() {
                 </p>
                 {member.name === "Ogbodo Obiajulu Cajetan" && (
                   <p className="mt-3 text-sm text-ink/65">
-                    <a href="https://www.linkedin.com/in/obiajulu-ogbodo-0123451a4/" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-ink">LinkedIn</a>
+                    <a
+                      href="https://www.linkedin.com/in/obiajulu-ogbodo-0123451a4/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="transition-colors hover:text-ink"
+                    >
+                      LinkedIn
+                    </a>
                   </p>
                 )}
                 <p className="mt-3 text-sm leading-relaxed text-ink/60">
