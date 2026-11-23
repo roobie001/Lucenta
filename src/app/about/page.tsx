@@ -88,6 +88,9 @@ export default function AboutPage() {
               the project develops. Names and bios will go here once they are
               confirmed.
             </p>
+            <p className="mt-4 text-sm text-ink/65">
+              <a href="https://www.linkedin.com/company/lucentaa/" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-ink">Follow Lucentaa on LinkedIn</a>
+            </p>
           </div>
 
           <div className="mx-auto mt-16 grid max-w-4xl grid-cols-1 gap-5 sm:grid-cols-3">
@@ -110,6 +113,11 @@ export default function AboutPage() {
                 <p className="mt-1 font-mono text-xs uppercase tracking-wider text-teal-light">
                   {member.role}
                 </p>
+                {member.name === "Ogbodo Obiajulu Cajetan" && (
+                  <p className="mt-3 text-sm text-ink/65">
+                    <a href="https://www.linkedin.com/in/obiajulu-ogbodo-0123451a4/" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-ink">LinkedIn</a>
+                  </p>
+                )}
                 <p className="mt-3 text-sm leading-relaxed text-ink/60">
                   {member.bio}
                 </p>

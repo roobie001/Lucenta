@@ -18,6 +18,8 @@ const columns = [
       { label: "Careers", href: "/careers" },
       { label: "Blog", href: "/blog" },
       { label: "Contact", href: "/contact" },
+      { label: "Lucentaa on LinkedIn", href: "https://www.linkedin.com/company/lucentaa/", external: true },
+      { label: "Founder on LinkedIn", href: "https://www.linkedin.com/in/obiajulu-ogbodo-0123451a4/", external: true },
     ],
   },
   {
@@ -44,7 +46,7 @@ export function Footer() {
               Currently seeking pilot partners.
             </p>
             <div className="mt-5 space-y-1.5 font-mono text-xs text-ink/40">
-              <p>hello@lucentaa.com</p>
+              <p>admin@lucentaa.com</p>
               <p>Lagos, Nigeria</p>
             </div>
           </div>
@@ -57,12 +59,15 @@ export function Footer() {
               <ul className="mt-4 space-y-3">
                 {column.links.map((link) => (
                   <li key={link.label}>
-                    <Link
-                      href={link.href}
-                      className="text-sm text-ink/65 transition-colors hover:text-ink"
-                    >
-                      {link.label}
-                    </Link>
+                    {"external" in link && link.external ? (
+                      <a href={link.href} target="_blank" rel="noopener noreferrer" className="text-sm text-ink/65 transition-colors hover:text-ink">
+                        {link.label}
+                      </a>
+                    ) : (
+                      <Link href={link.href} className="text-sm text-ink/65 transition-colors hover:text-ink">
+                        {link.label}
+                      </Link>
+                    )}
                   </li>
                 ))}
               </ul>

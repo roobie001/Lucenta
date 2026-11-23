@@ -34,13 +34,13 @@ export default function ContactPage() {
                   <span className="font-mono text-xs uppercase tracking-widest text-ink/45">
                     Email
                   </span>
-                  <p className="mt-1 text-sm text-ink/80">hello@lucentaa.com</p>
+                  <p className="mt-1 text-sm text-ink/80">admin@lucentaa.com</p>
                 </div>
                 <div>
                   <span className="font-mono text-xs uppercase tracking-widest text-ink/45">
                     Pilot Inquiries
                   </span>
-                  <p className="mt-1 text-sm text-ink/80">pilot@lucentaa.com</p>
+                  <p className="mt-1 text-sm text-ink/80">admin@lucentaa.com</p>
                 </div>
                 <div>
                   <span className="font-mono text-xs uppercase tracking-widest text-ink/45">
@@ -51,6 +51,9 @@ export default function ContactPage() {
                   </p>
                 </div>
               </div>
+              <p className="mt-6 text-sm text-ink/65">
+                <a href="https://www.linkedin.com/company/lucentaa/" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-ink">Find us on LinkedIn</a>
+              </p>
             </div>
 
             <div className="rounded-2xl border border-white/10 bg-white/[0.02] p-6 sm:p-8">
