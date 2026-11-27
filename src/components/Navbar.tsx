@@ -9,6 +9,7 @@ import { LogoutButton } from "./LogoutButton";
 
 const links = [
   { label: "Product", href: "/product" },
+  { label: "Demo", href: "/demo" },
   { label: "Technology", href: "/technology" },
   { label: "Pricing", href: "/pricing" },
   { label: "About", href: "/about" },
@@ -58,7 +59,7 @@ export function Navbar({ userEmail }: { userEmail: string | null }) {
                 {userEmail}
               </span>
               <Link
-                href="/dashboard"
+                href="/demo"
                 className="hidden rounded-md bg-teal px-4 py-2 text-sm font-semibold text-navy transition-all hover:bg-teal-light hover:shadow-glow-teal sm:block"
               >
                 Dashboard
@@ -140,7 +141,7 @@ export function Navbar({ userEmail }: { userEmail: string | null }) {
                     {userEmail}
                   </p>
                   <Link
-                    href="/dashboard"
+                    href="/demo"
                     onClick={() => setOpen(false)}
                     className="rounded-md bg-teal px-3 py-2.5 text-center text-sm font-semibold text-navy transition-all hover:bg-teal-light"
                   >

@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
-import { Navbar } from "@/components/Navbar";
-import { Footer } from "@/components/Footer";
+import { SiteChrome } from "@/components/SiteChrome";
 import { getCurrentUser } from "@/lib/supabase/server";
 
 const inter = Inter({
@@ -46,9 +45,7 @@ export default async function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable}`}>
       <body className="flex min-h-screen flex-col bg-navy font-sans text-ink antialiased">
-        <Navbar userEmail={user?.email ?? null} />
-        <main className="flex-1">{children}</main>
-        <Footer />
+        <SiteChrome userEmail={user?.email ?? null}>{children}</SiteChrome>
       </body>
     </html>
   );

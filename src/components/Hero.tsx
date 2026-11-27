@@ -41,7 +41,7 @@ export function Hero() {
               Become a Pilot Partner
             </Link>
             <Link
-              href="/product"
+              href="/demo"
               className="w-full rounded-md border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold text-ink transition-all hover:border-teal/40 hover:bg-white/10 sm:w-auto"
             >
               See the Concept

@@ -227,6 +227,14 @@ export default function ProductPage() {
                 </div>
               </div>
             </div>
+            <div className="mt-8 flex justify-center">
+              <Link
+                href="/demo"
+                className="inline-flex items-center gap-2 rounded-md border border-teal/40 bg-teal/10 px-5 py-2.5 font-mono text-xs font-semibold uppercase tracking-wider text-teal-light transition-all hover:bg-teal/20 hover:shadow-glow-teal"
+              >
+                Open Interactive Review Workspace →
+              </Link>
+            </div>
           </div>
         </Container>
       </section>
