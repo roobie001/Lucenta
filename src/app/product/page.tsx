@@ -4,6 +4,7 @@ import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { Pill } from "@/components/ui/Pill";
 import { PageHeader } from "@/components/ui/PageHeader";
+import { ProductPreview } from "@/components/ProductPreview";
 
 export const metadata: Metadata = {
   title: "Product | Lucentaa",
@@ -238,6 +239,8 @@ export default function ProductPage() {
           </div>
         </Container>
       </section>
+
+      <ProductPreview />
 
       <section className="py-24">
         <Container>

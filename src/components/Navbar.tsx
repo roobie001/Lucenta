@@ -9,7 +9,7 @@ import { LogoutButton } from "./LogoutButton";
 
 const links = [
   { label: "Product", href: "/product" },
-  { label: "Demo", href: "/demo" },
+  { label: "Live Demo", href: "/demo" },
   { label: "Technology", href: "/technology" },
   { label: "Pricing", href: "/pricing" },
   { label: "About", href: "/about" },

@@ -1,6 +1,7 @@
 import { Hero } from "@/components/Hero";
 import { PlatformLayers } from "@/components/PlatformLayers";
 import { AIWorkflow } from "@/components/AIWorkflow";
+import { ProductPreview } from "@/components/ProductPreview";
 import { FeatureGrid } from "@/components/FeatureGrid";
 import { CtaBanner } from "@/components/CtaBanner";
 
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       <PlatformLayers />
       <AIWorkflow />
+      <ProductPreview />
       <FeatureGrid />
       <CtaBanner />
     </>
